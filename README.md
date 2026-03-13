@@ -71,7 +71,7 @@ If you want full security on your workstation remind to secure your Windows 11 i
 The steps to activate the Bitlocker PIN below:
 
 - Open up **`gpedit.msc`**. This brings up your group policy options.
-  - Go to **Computer Configuration**; **Administrative Templates**; **Windows Components**; **BitLocker Drive Encryption**; **Operating System Drives**
+  - Go to **Computer Configuration**; **Administrative Templates**; **Windows Components**; **BitLocker Drive Encryption**; **Operating System Drives**.
     - In the right pane - double-click **Require additional authentication at startup** and a box opens.
     - Ensure that the **Enabled** option is chosen so that all the other options are active.
     - Clear the box for **Allow BitLocker without a compatible TPM**.
@@ -86,7 +86,7 @@ The steps to activate the Bitlocker PIN below:
     - Ensure that the **Enabled** option is chosen to activate.
     - Click the **Apply** button and then the OK button to save the changes in the Local Group Policy Editor.
 
-- **Reboot** the system once more.
+- **Reboot** the system.
 - Launch an **Admin Command Prompt** (Elevated Command Prompt).
   - Excluding the quotation marks, enter the command: **`manage-bde -protectors -add c: -TPMAndPIN`**
   - You are prompted to enter the PIN. Enter a number between four and seven digits. The cursor will not register the keystrokes as you enter the number.
