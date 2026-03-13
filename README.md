@@ -71,25 +71,25 @@ If you want full security on your workstation remind to secure your Windows 11 i
 The steps to activate the Bitlocker PIN below:
 
 - Open up **`gpedit.msc`**. This brings up your group policy options.
-  - Go to **Computer Configuration**; **Administrative Templates**; **Windows Components**; **BitLocker Drive Encryption**; **Operating System Drives**.
-    - In the right pane - double-click **Require additional authentication at startup** and a box opens.
-    - Ensure that the **Enabled** option is chosen so that all the other options are active.
-    - Clear the box for **Allow BitLocker without a compatible TPM**.
-    - For the choice of **Configure TPM startup**, choose **Allow TPM**.
-    - For the choice of **Configure TPM startup PIN**, choose **Require startup PIN with TPM**.
-    - For the choice of **Configure TPM startup key**, choose **Allow startup key with TPM**.
-    - For the choice of **Configure TPM startup key and PIN**, choose **Allow startup key and PIN with TPM**.
-    - Click the **Apply** button and then the OK button to save the changes in the Local Group Policy Editor.
+  - Go to **_Computer Configuration_**; **_Administrative Templates_**; **_Windows Components_**; **_BitLocker Drive Encryption_**; **_Operating System Drives_**.
+    - In the right pane - double-click **_Require additional authentication at startup_** and a box opens.
+    - Ensure that the **_Enabled_** option is chosen so that all the other options are active.
+    - Clear the box for **_Allow BitLocker without a compatible TPM_**.
+    - For the choice of **_Configure TPM startup_**, choose **_Allow TPM_**.
+    - For the choice of **_Configure TPM startup PIN_**, choose **_Require startup PIN with TPM_**.
+    - For the choice of **_Configure TPM startup key_**, choose **_Allow startup key with TPM_**.
+    - For the choice of **_Configure TPM startup key and PIN_**, choose **_Allow startup key and PIN with TPM_**.
+    - Click the **_Apply_** button and then the OK button to save the changes in the Local Group Policy Editor.
   
-- Stay under the **BitLocker Drive Encryption > Operating System Drives**.
-  - In the right pane - double-click **Enable use of BitLocker Authentication requiring preboot keyboard input on slates**.
-    - Ensure that the **Enabled** option is chosen to activate.
-    - Click the **Apply** button and then the OK button to save the changes in the Local Group Policy Editor.
+- Stay under the **_BitLocker Drive Encryption > Operating System Drives_**.
+  - In the right pane - double-click **_Enable use of BitLocker Authentication requiring preboot keyboard input on slates_**.
+    - Ensure that the **_Enabled_** option is chosen to activate.
+    - Click the **_Apply_** button and then the OK button to save the changes in the Local Group Policy Editor.
 
-- **Reboot** the system.
-- Launch an **Admin Command Prompt** (Elevated Command Prompt).
+- **_Reboot_** the system.
+- Launch an **_Admin Command Prompt_** (Elevated Command Prompt).
   - Enter the command: **`manage-bde -protectors -add c: -TPMAndPIN`**
   - You are prompted to enter the PIN. Enter a number between four and seven digits. The cursor will not register the keystrokes as you enter the number.
   - Press the Enter key to save the PIN, and you are prompted to enter the PIN again to confirm. Press the Enter key again to save the PIN confirmation - It runs through the commands showing it as saved.
 
-- **Reboot the system once more**, and it prompts for a PIN with the Slate Keyboard.
+- **_Reboot the system once more_**, and it prompts for a PIN with the Slate Keyboard.
