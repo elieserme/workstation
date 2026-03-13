@@ -57,10 +57,39 @@ You also can **Turn off Memory Integrity on Windows 11** to avoid problems on Op
 
 ## Omarchy Linux
 
-The included **`USBMap.kext`** with USB mapping is for the **ASUS ROG STRIX B360-G Gaming and MacPro7,1 SMBIOS only** with all extenal **USB 3** ports enabled.
-
-Keep in mind that **you have to choose what ports to enable**, because **MacOS has a 15 logical ports limit** and each port has 2 logical ports _(one physical port has one USB 2 and one USB 3 personality... so **2 logical ports for each USB 3.0 port**)_.
+Dual boot with DHH's [omarchy.org](https://omarchy.org/) linux based on Arch. Omarchy uses Limine bootloader and can be configured to boot with Limine with a Windows boot entry for smooth dual boot support.
 
 ## Final Steps
 
-The EFI folder configuration already comes with SecureBootModel disabled by default. After successfully installing MacOS you can enable these options as below.
+If you want full security on your workstation remind to secure your Windows 11 installation:
+
+- Activate **Bitlocker**
+- Save the recovery key on **external media secured by yourself**
+- **Delete the key from your Microsoft account** to avoid law enforcement and leaks to compromise it
+- Activate **Bitlocker PIN** on startup extra step (see below)
+
+The steps to activate the Bitlocker PIN below:
+
+- Open up **`gpedit.msc`**. This brings up your group policy options.
+  - Go to **Computer Configuration**; **Administrative Templates**; **Windows Components**; **BitLocker Drive Encryption**; **Operating System Drives**
+    - In the right pane - double-click **Require additional authentication at startup** and a box opens.
+    - Ensure that the **Enabled** option is chosen so that all the other options are active.
+    - Clear the box for **Allow BitLocker without a compatible TPM**.
+    - For the choice of **Configure TPM startup**, choose **Allow TPM**.
+    - For the choice of **Configure TPM startup PIN**, choose **Require startup PIN with TPM**.
+    - For the choice of **Configure TPM startup key**, choose **Allow startup key with TPM**.
+    - For the choice of **Configure TPM startup key and PIN**, choose **Allow startup key and PIN with TPM**.
+    - Click the **Apply** button and then the OK button to save the changes in the Local Group Policy Editor.
+  
+- Stay under the **BitLocker Drive Encryption > Operating System Drives**.
+  - In the right pane - double-click **Enable use of BitLocker Authentication requiring preboot keyboard input on slates**.
+    - Ensure that the **Enabled** option is chosen to activate.
+    - Click the **Apply** button and then the OK button to save the changes in the Local Group Policy Editor.
+
+- **Reboot** the system once more.
+- Launch an **Admin Command Prompt** (Elevated Command Prompt).
+  - Excluding the quotation marks, enter the command: **`manage-bde -protectors -add c: -TPMAndPIN`**
+  - You are prompted to enter the PIN. Enter a number between four and seven digits. The cursor will not register the keystrokes as you enter the number.
+  - Press the Enter key to save the PIN, and you are prompted to enter the PIN again to confirm. Press the Enter key again to save the PIN confirmation - It runs through the commands showing it as saved.
+
+- **Reboot the system once more**, and it prompts for a PIN with the Slate Keyboard.
