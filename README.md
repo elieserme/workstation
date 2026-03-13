@@ -8,12 +8,9 @@ This is a receipt of workstation for daily use.
 	- [Table of Contents](#table-of-contents)
 	- [Hardware](#hardware)
 	- [BIOS settings](#bios-settings)
-	- [MacOS 26 Tahoe setup](#macos-26-tahoe-setup)
-	- [USB Ports](#usb-ports)
-	- [Sleep](#sleep)
-	- [Windows Notes](#windows-notes)
+	- [Windows 11](#windows-11)
+	- [Omarchy Linux](#omarchy-linux)
 	- [Final Steps](#final-steps)
-	- [Cleaning the EFI](#cleaning-the-efi)
 
 ## Hardware
 
@@ -27,167 +24,19 @@ This is a receipt of workstation for daily use.
 |     **Bluetooth**     | **[TP-Link UB400 version 1.0](https://www.tp-link.com/en/home-networking/bluetooth-adapter/ub400/)** Bluetooth 4.0 USB adapter                                               |
 |     **RAID 5**      | **2 x** **[Seagate BarraCuda ST2000DM008-2FR102](https://www.seagate.com/br/pt/products/hard-drives/barracuda-hard-drive/)** 2TB HDD 3.5" _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/3-5-barracudaDS1900-11-1806BR-pt_PT.pdf)**)_ <br /> **[Western Digital WD20SPZX](https://www.westerndigital.com/pt-br/products/internal-drives/wd-blue-mobile-sata-hdd?sku=WD20SPZX#WD20SPZX)** 2TB HDD 2.5" _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/product-brief-western-digital-wd-blue-mobile-sata-hdd.pdf)**)_ 
 | **AIO** | **[Arctic Liquid Freezer III Pro 360](https://www.arctic.de/en/Liquid-Freezer-III-Pro-360)** for CPU and VRM _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Spec_Sheet_Liquid_Freezer_III_Pro_360_EN.pdf)** and **[manual](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Quick_Manual_Intel_r1b.pdf)**)_ |                                              |
-|  **Coolers**  |  **3 x [Artic P12 Pro PST](https://www.arctic.de/en/P12-Pro-PST/ACFAN00306A)** for front intake _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Spec_Sheet_P12_Pro_PST_EN.pdf)**)_ <br /> **2 x [Fractal Aspect 14 PWM](https://www.fractal-design.com/products/fans/aspect/aspect-14-pwm/)** for top exaust _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Aspect_Product-Sheet_EN.pdf)**)_ <br />**[Noctua NF-A12x25 PWM](https://www.noctua.at/en/products/nf-a12x25-pwm)** for rear exaust _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/noctua_nf_a12x25_pwm_infosheet_en_web.pdf)** and **[manual](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/noctua_nf_a12x25_pwm_manual_en_web.pdf)**)_                                                                                                 |
+|  **Fans**  |  **3 x [Artic P12 Pro PST](https://www.arctic.de/en/P12-Pro-PST/ACFAN00306A)** for front intake _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Spec_Sheet_P12_Pro_PST_EN.pdf)**)_ <br /> **2 x [Fractal Aspect 14 PWM](https://www.fractal-design.com/products/fans/aspect/aspect-14-pwm/)** for top exaust _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/Aspect_Product-Sheet_EN.pdf)**)_ <br />**[Noctua NF-A12x25 PWM](https://www.noctua.at/en/products/nf-a12x25-pwm)** for rear exaust _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/noctua_nf_a12x25_pwm_infosheet_en_web.pdf)** and **[manual](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/noctua_nf_a12x25_pwm_manual_en_web.pdf)**)_                                                                                                 |
 | **Power Supply** | **[Super Flower LEADEX III GOLD 850W](https://www.super-flower.com.tw/ja/products/leadex-iii-gold-850w)**  _(use **[this link](https://www.msi.com/power-supply-calculator)** to calculate your power supply need)_                                           |
 |     **Case**     | **[Fractal North](https://www.fractal-design.com/products/cases/north/north/charcoal-black/)** ATX case _(**[datasheet](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/North_Product-Sheet_EN.pdf)** and **[manual](https://github.com/elieserme/workstation/raw/refs/heads/main/docs/North-Manual-V1.2.pdf)**)_               |
 
 ## BIOS settings
 
-ASUS ROG STRIX B360-G Gaming using **BIOS version 3101** settings for MacOS:
+MSI B760M-P DDR4 using **BIOS version 7E02v1F** essential settings:
 
 - Exit &gt; **Load optimised defaults**
-- Advanced &gt; Platform Misc Configuration &gt; PCI Express Native Power Management &gt; **Enabled**
-- Advanced &gt; Platform Misc Configuration &gt; Native ASPM &gt; **Enabled**
-- Advanced &gt; Platform Misc Configuration &gt; PCH DMI ASPM &gt; **Auto**
-- Advanced &gt; Platform Misc Configuration &gt; ASPM 0 &gt; **Auto**
-- Advanced &gt; Platform Misc Configuration &gt; L1 Substates &gt; **Disabled**
-- Advanced &gt; Platform Misc Configuration &gt; PCI Express Clock Gating &gt; **Enabled**
-- Advanced &gt; Platform Misc Configuration &gt; DMI Link ASPM Control &gt; **Disabled**
-- Advanced &gt; Platform Misc Configuration &gt; PEG - ASPM &gt; **Auto**
-- Advanced &gt; CPU Configuration &gt; Software Guard Extensions (SGX) &gt; **Disabled**
-- Advanced &gt; CPU Configuration &gt; Intel (VMX) Virtualization Technology &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Intel SpeedStep &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Intel SpeedShift Technology &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Turbo Mode &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C-states &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Enhanced C-states &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Intel SpeedStep &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C3 Report &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C6 Report &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C7 Report &gt; **CPU C7s**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C8 Report &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C9 Report &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CPU C10 Report &gt; **Enabled**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; Package C State Limit &gt; **Auto**
-- Advanced &gt; CPU Configuration &gt; CPU Power Management Control &gt; CFG Lock &gt; **Disabled**
-- Advanced &gt; System Agent (SA) Configuration &gt; VT-d &gt; **Enabled**
-- Advanced &gt; PCH Configuration &gt; System Time and Alarm Source &gt; **ACPI Time and Alarm Device**
-- Advanced &gt; PCH Storage Configuration &gt; SATA Mode Selection &gt; **AHCI**
-- Advanced &gt; Onboard Devices Configuration &gt; Serial Port Configuration &gt; **Off**
-- Advanced &gt; PCI Subsystem Settings &gt; Above 4G Decoding &gt; **Enabled**
-- Advanced &gt; PCI Subsystem Settings &gt; Re-Size BAR Support &gt; **Auto**
-- Advanced &gt; PCI-FW Configuration &gt; TPM Device Selection &gt; **PTT**
-- Advanced &gt; Trusted Computing &gt; Secure Device Support &gt; **Enabled**
-- Advanced &gt; USB Configuration &gt; XHCI Hand-off &gt; **Enabled**
-- Boot &gt; CSM (Compatibility Support Module) &gt; Launch CSM &gt; **Disabled**
-- Boot &gt; Secure Boot &gt; OS Type &gt; **Other OS**
-- Boot &gt; Fast Boot &gt; **Disabled**
-- Exit &gt; **Save Changes & Reset**
+- Boot &gt; Secure Boot &gt; **Disabled** _(supporting Linux dual boot)_
+- Exit &gt; **Save Changes & Restart**
   
-## MacOS 26 Tahoe setup
-
-- Can be direct downloaded from Apple using **[OSXDaily downloads](https://osxdaily.com/where-download-macos-installers/)** on a MacOS computer;
-- Open the installer and wait until the installer opens. Not needed to continue installation, just move on;
-- Make a **USB** install disk _(the example below uses a USB device named USB and makes Tahoe installation disk)_:
-```bash
-sudo /Applications/Install\ macOS\ Tahoe.app/Contents/Resources/createinstallmedia --volume /Volumes/USB
-```
-- After create de USB drive installation, just close the MacOS installer app;
-- **Download** the **[git repo sources](http://github.com/elieserme/hackintosh/zipball/main/)** and use the **EFI** folder **or clone it** with following command:
-
-```bash
-git clone git@github.com:elieserme/hackintosh.git
-```
-
-Download the **[Python installer](https://www.python.org/downloads/)** and setup it to use the tools below.
-
-Download **[ProperTree](https://github.com/corpnewt/ProperTree/zipball/master/)** to edit the **`config.plist`** file and change **PlatformInfo** values to your own machine:
-- **MLB**, **SystemSerialNumber** and **SystemUUID** can be generated by downloading and use **[GenSMBIOS utility](https://github.com/corpnewt/GenSMBIOS/zipball/master/)**;
-- Before use a generated **SystemSerialNumber**, check it on **[Apple Database](https://checkcoverage.apple.com)** _(If it is valid, generate another and repeat if necessary until find an invalid and unused one)_; 
-- **ROM** is the Mac address of the **en0** network adapter _(Intel i219v gigabit port)_. Use the **Network Settings > Advanced > Hardware** panel to copy the Mac address _(only numbers and letters, without the : chars)_;
-- Inside the **`config.plist`** search and replace **AAAAAAAAAAAA** with your generated _SystemSerialNumber_ value, **BBBBBBBBBBBBBBBBBB** with _MLB_ value, **CCCCCC-CCCC-CCCC-CCCC-CCCCCCCCCCCC** with _SystemUUID_ value and **DDDDDDDD** with _ROM_ value:
-```xml
-<key>PlatformInfo</key>
-<dict>
-	<key>Automatic</key>
-	<true/>
-	<key>CustomMemory</key>
-	<false/>
-	<key>Generic</key>
-	<dict>
-		<key>MaxBIOSVersion</key>
-		<false/>
-		<key>AdviseFeatures</key>
-		<false/>
-		<key>SystemMemoryStatus</key>
-		<string>Auto</string>
-		<key>MLB</key>
-		<string>BBBBBBBBBBBBBBBBBB</string>
-		<key>ProcessorType</key>
-		<integer>0</integer>
-		<key>ROM</key>
-		<data>DDDDDDDD</data>
-		<key>SpoofVendor</key>
-		<true/>
-		<key>SystemProductName</key>
-		<string>MacPro7,1</string>
-		<key>SystemSerialNumber</key>
-		<string>AAAAAAAAAAAA</string>
-		<key>SystemUUID</key>
-		<string>CCCCCC-CCCC-CCCC-CCCC-CCCCCCCCCCCC</string>
-	</dict>
-	<key>UpdateDataHub</key>
-	<true/>
-	<key>UpdateNVRAM</key>
-	<true/>
-	<key>UpdateSMBIOS</key>
-	<true/>
-	<key>UpdateSMBIOSMode</key>
-	<string>Create</string>
-	<key>UseRawUuidEncoding</key>
-	<false/>
-</dict>
-```
-- Mount the **EFI partition** of the **USB** disk with **[MountEFI](https://github.com/corpnewt/MountEFI/zipball/master/)** utility and **copy your EFI folder** to **`/Volumes/EFI`**
-- **Boot** the target machine with **USB** disk you just made
-- Use **Clear NVRAM** and reboot to make a clean install
-- Use **Disk Utility** to erase a **APFS GUI** volume and **install MacOS**
-- Finish **normal** MacOS setup
-
-## USB Ports
-
-The included **`USBMap.kext`** with USB mapping is for the **ASUS ROG STRIX B360-G Gaming and MacPro7,1 SMBIOS only** with all extenal **USB 3** ports enabled.
-
-Keep in mind that **you have to choose what ports to enable**, because **MacOS has a 15 logical ports limit** and each port has 2 logical ports _(one physical port has one USB 2 and one USB 3 personality... so **2 logical ports for each USB 3.0 port**)_.
-
-![Motherboard](/images/motherboard.png)
-
-## Sleep
-Sometimes after sleep the computer will **wake every few minutes**. Normal Macs do this for several reasons, like other devices near. If you require a deep sleep without random wakeups, use the commands below to **disable this features**:
-```bash
-sudo pmset proximitywake 0
-```
-This is a desktop machine, you may want to **disable hibernation**:
-```bash
-sudo pmset hibernatemode 0
-```
-If you want to **restore the default** factory settings:
-```bash
-sudo pmset -a restoredefaults
-```
-
-You know that **Power Button can turn on and wake the computer** from Sleep and Hibernate modes. But you can make the Power Button **works for turn off the display and sleep like a real Mac too** with the following command:
-```bash
-defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool yes
-```
-
-To **verify the current values** on your computer and **see what services are preventing the system to sleep**, use the following command:
-```bash
-pmset -g live
-```
-
-The commands above **works on a real Mac** computer too, if you want deep sleeps just follow the same steps.
-
-## Windows Notes
-  
-**Drivers** for this motherboard are below:
-
-- **Download [Intel INF Driver](https://raw.github.com/elieserme/hackintosh/main/b360-g/drivers/DRV_Chipset_Intel_TP_W11_64_V101188368283_20211022R.zip)** _**(required)**_
-- **Download [Latest AMD Graphics Driver](https://www.amd.com/pt/support/graphics/amd-radeon-6000-series/amd-radeon-6600-series/amd-radeon-rx-6600-xt)** _**(required)**_
-- Download [Apple TimeCapsule Driver](https://raw.github.com/elieserme/hackintosh/main/b360-g/drivers/AirPortSetup.exe) _(optional)_
-
-> **TimeCapsule on Windows:**
-To use TimeCapsule driver, first enable the **SMB 1.0/CIFS** on Windows (use the _**Turn Windows features on or off**_ dialog for this). The same apply if you have a Windows file server that will be accessed by a MacOS machine or vice-versa.
+## Windows 11
 
 If you experience difference in date & time on Windows, it's necessary make Windows work on GMT time using the following command:
 
@@ -206,26 +55,12 @@ You also can **Turn off Memory Integrity on Windows 11** to avoid problems on Op
 - Select **Start**, enter ‘**Core Isolation**’ in the taskbar, and select **Core Isolation** from the list of results to open the Windows security app;
 - On the **Core isolation** page, _**turn off** the toggle_ for **Memory Integrity**. You might need to restart the computer. 
 
+## Omarchy Linux
+
+The included **`USBMap.kext`** with USB mapping is for the **ASUS ROG STRIX B360-G Gaming and MacPro7,1 SMBIOS only** with all extenal **USB 3** ports enabled.
+
+Keep in mind that **you have to choose what ports to enable**, because **MacOS has a 15 logical ports limit** and each port has 2 logical ports _(one physical port has one USB 2 and one USB 3 personality... so **2 logical ports for each USB 3.0 port**)_.
+
 ## Final Steps
 
 The EFI folder configuration already comes with SecureBootModel disabled by default. After successfully installing MacOS you can enable these options as below.
-
-> **MacOS Updates:**
-Using Sonoma 14.4 and later, every time you update MacOS, you need to first disable SecureBootModel (Disabled). After the update, you can enable it again (Default). Please remind to **Clear NVRAM** each time you enable or disable this settings.
-
-- Enable the **SecureBootModel** in **`config.plist`**:
-```diff
-	<key>SecureBootModel</key>
--	<string>Disabled</string>
-+	<string>Default</string>
-```
-
-## Cleaning the EFI
-
-- If you **do not want** the **Boot Menu**, disable it in **`config.plist`** to boot like a real Mac:
-```diff
-	<key>ShowPicker</key>
--	<true/>
-+	<false/>
-```
-
