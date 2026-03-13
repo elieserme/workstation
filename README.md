@@ -88,7 +88,7 @@ The steps to activate the Bitlocker PIN below:
 
 - **Reboot** the system.
 - Launch an **Admin Command Prompt** (Elevated Command Prompt).
-  - Excluding the quotation marks, enter the command: **`manage-bde -protectors -add c: -TPMAndPIN`**
+  - Enter the command: **`manage-bde -protectors -add c: -TPMAndPIN`**
   - You are prompted to enter the PIN. Enter a number between four and seven digits. The cursor will not register the keystrokes as you enter the number.
   - Press the Enter key to save the PIN, and you are prompted to enter the PIN again to confirm. Press the Enter key again to save the PIN confirmation - It runs through the commands showing it as saved.
 
