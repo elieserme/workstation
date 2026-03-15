@@ -37,7 +37,7 @@ MSI B760M-P DDR4 using **BIOS version 7E02v1F** essential settings:
   
 ## Windows 11
 
-If you experience difference in date & time on Windows, it's necessary make Windows work on GMT time using the following command:
+If you experience difference in date & time on Windows when dual boot with Linux, it's necessary make Windows work on GMT time using the following command:
 
 ```bash
 reg add "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TimeZoneInformation" /v RealTimeIsUniversal /d 1 /t REG_QWORD /f
