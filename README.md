@@ -10,7 +10,6 @@ This is a receipt of workstation for daily use.
 	- [BIOS settings](#bios-settings)
 	- [Windows 11](#windows-11)
 	- [Omarchy Linux](#omarchy-linux)
-	- [Final Steps](#final-steps)
 
 ## Hardware
 
@@ -55,12 +54,6 @@ You also can **Turn off Memory Integrity on Windows 11** to avoid problems on Op
 - Select **Start**, enter ‘**Core Isolation**’ in the taskbar, and select **Core Isolation** from the list of results to open the Windows security app;
 - On the **Core isolation** page, _**turn off** the toggle_ for **Memory Integrity**. You might need to restart the computer. 
 
-## Omarchy Linux
-
-Dual boot with DHH's [omarchy.org](https://omarchy.org/) linux based on Arch. Omarchy uses Limine bootloader and can be configured to boot with Limine with a Windows boot entry for smooth dual boot support.
-
-## Final Steps
-
 If you want full security on your workstation remind to secure your Windows 11 installation:
 
 - Activate **Bitlocker**
@@ -93,3 +86,7 @@ The steps to activate the Bitlocker PIN below:
   - Press the Enter key to save the PIN, and you are prompted to enter the PIN again to confirm. Press the Enter key again to save the PIN confirmation - It runs through the commands showing it as saved.
 
 - **_Reboot the system once more_**, and it prompts for a PIN with the Slate Keyboard.
+
+## Omarchy Linux
+
+Dual boot with DHH's [omarchy.org](https://omarchy.org/) linux based on Arch. Omarchy uses Limine bootloader and can be configured to boot with Limine with a Windows boot entry for smooth dual boot support.
