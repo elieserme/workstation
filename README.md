@@ -63,6 +63,23 @@ You also can **Turn off Memory Integrity on Windows 11** to avoid problems on Op
 - Select **Start**, enter ‘**Core Isolation**’ in the taskbar, and select **Core Isolation** from the list of results to open the Windows security app;
 - On the **Core isolation** page, _**turn off** the toggle_ for **Memory Integrity**. You might need to restart the computer. 
 
+Disable Hibernation support to preserve your SSD/NVMe drive:
+
+```bash
+powercfg.exe /hibernate off
+```
+
+With 64GB of RAM available, you can disable the Paging File:
+
+- Press **Windows key + R** to open the Run dialog box.
+- Type **`sysdm.cpl`** and click **OK** to open **System Properties**.
+- Navigate to the **Advanced** tab and click on **Settings** under the **Performance** section.
+- In the **Performance Options** window, go to the **Advanced** tab and click on **Change** under the **Virtual Memory** section.
+- **Uncheck** the box for Automatically manage paging file size for all drives.
+- Select the drive where the pagefile is located (usually C:).
+- Choose the option **No paging file** and click **Set**.
+- Click **OK** to close all windows and restart your computer when prompted.
+
 If you want full security on your workstation remind to secure your Windows 11 installation:
 
 - Activate **Bitlocker**
