@@ -37,6 +37,15 @@ MSI B760M-P DDR4 using **BIOS version 7E02v1F** essential settings:
   
 ## Windows 11
 
+Install WSL2 with Ubuntu default with following command on PowerShell prompt:
+```bash
+wsl --install
+```
+
+There is a _**[script](https://github.com/elieserme/workstation/raw/refs/heads/main/scripts/wsl2-dev.sh)**_ to automate the installation of essential development tools on WSL2. Install **[Android Studio](https://developer.android.com/studio)** **before running** this script.
+
+There is a Windows Terminal suggested _**[config](https://github.com/elieserme/workstation/raw/refs/heads/main/scripts/wsl2-dev.sh)**_ to better appearence. Install all **`fonts`** in this repo **before** using this config.
+
 If you experience difference in date & time on Windows when dual boot with Linux, it's necessary make Windows work on GMT time using the following command:
 
 ```bash
