@@ -16,7 +16,7 @@ This is a receipt of workstation for daily use.
 |       Type       | Item                                                                                                                                                                                             |
 | :--------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 |     **CPU**      | **[Intel i5 14600K](https://www.intel.com.br/content/www/br/pt/products/sku/236799/intel-core-i5-processor-14600k-24m-cache-up-to-5-30-ghz/specifications.html)** 14th gen 14 core 20 threads 5.3Ghz max         |
-| **Motherboard**  | **[MSI B760M-P DDR4](https://www.msi.com/Motherboard/PRO-B760M-P-DDR4)** Micro ATX _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/PRO-B760M-P-DDR4.pdf)**, **[manual](https://raw.github.com/elieserme/workstation/main/docs/PROB760M-PDDR4-MANUAL.pdf)** and latest **[BIOS](https://raw.github.com/elieserme/workstation/main/bios/7E02v1F.zip)**)_                                                                                              |
+| **Motherboard**  | **[MSI B760M-P](https://www.msi.com/Motherboard/PRO-B760M-P-DDR4)** Micro ATX _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/PRO-B760M-P-DDR4.pdf)**, **[manual](https://raw.github.com/elieserme/workstation/main/docs/PROB760M-PDDR4-MANUAL.pdf)** and latest **[BIOS](https://raw.github.com/elieserme/workstation/main/bios/7E02v1F.zip)**)_                                                                                              |
 |     **RAM**      | **2 x [Lexar LD4AU032G-B3200GSST](https://americas.lexar.com/product/lexar-ddr4-3200-udimm-desktop-memory/)** 64GB DDR4 3200MHz _(native jedec speed)_                                                                   |
 |     **GPU**      | **[MSI RTX 5070 TI 16GB](https://www.msi.com/Graphics-Card/GeForce-RTX-5070-Ti-16G-INSPIRE-3X-OC-PLUS)** NVIDIA Blackwell _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/GeForce-RTX-5070-Ti-16G-INSPIRE-3X-OC-PLUS.pdf)**)_                                                                          |
 |     **NVMe**     | **[Kingston KC3000](https://www.kingston.com/br/ssd/kc3000-nvme-m2-solid-state-drive?capacity=1024gb)** 1TB PCIe 4.0 x4 _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/KC3000_us.pdf)**)_<br />**[WD Black SN750](https://www.westerndigital.com/pt-br/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C)** 1TB PCIe 3.0 x4 _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/data-sheet-wd-black-sn-750-nvme-ssd-heatsink-idk.pdf)**)_                                               |
@@ -29,7 +29,7 @@ This is a receipt of workstation for daily use.
 
 ## BIOS settings
 
-MSI B760M-P DDR4 using **BIOS version 7E02v1F** essential settings:
+MSI B760M-P using **BIOS version 7E02v1F** essential settings:
 
 - Exit &gt; **Load optimised defaults**
 - Boot &gt; Secure Boot &gt; **Disabled** _(supporting Linux dual boot)_
