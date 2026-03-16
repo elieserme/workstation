@@ -58,7 +58,7 @@ To increase Windows performance you can disable Downfall mitigations:
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 33554432 /f
 ```
 
-You also can **Turn off Memory Integrity on Windows 11** to avoid problems on Opencore boot _(and increase gamming performance)_:
+You also can **Turn off Memory Integrity on Windows 11** to avoid problems on dual boot _(and increase gamming performance)_:
 
 - Select **Start**, enter ‘**Core Isolation**’ in the taskbar, and select **Core Isolation** from the list of results to open the Windows security app;
 - On the **Core isolation** page, _**turn off** the toggle_ for **Memory Integrity**. You might need to restart the computer. 
@@ -69,7 +69,7 @@ Disable Hibernation support to preserve your SSD/NVMe drive:
 powercfg.exe /hibernate off
 ```
 
-With 64GB of RAM available, you can disable the Paging File:
+With 64GB of RAM available, you can disable the **Paging File**:
 
 - Press **Windows key + R** to open the Run dialog box.
 - Type **`sysdm.cpl`** and click **OK** to open **System Properties**.
@@ -85,9 +85,7 @@ If you want full security on your workstation remind to secure your Windows 11 i
 - Activate **Bitlocker**
 - Save the recovery key on **external media secured by yourself**
 - **Delete the key from your Microsoft account** to avoid law enforcement and leaks to compromise it
-- Activate **Bitlocker PIN** on startup extra step (see below)
-
-The steps to activate the Bitlocker PIN below:
+- _**Optional:**_ follow the next steps to activate **Bitlocker PIN** on startup _or stop here if you are satisfied with basic bitlocker security_
 
 - Open up **`gpedit.msc`**. This brings up your group policy options.
   - Go to **_Computer Configuration_**; **_Administrative Templates_**; **_Windows Components_**; **_BitLocker Drive Encryption_**; **_Operating System Drives_**.
