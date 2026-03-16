@@ -5,11 +5,11 @@ This is a receipt of workstation for daily use.
 ## Table of Contents
 
 - [Workstation](#workstation)
-	- [Table of Contents](#table-of-contents)
-	- [Hardware](#hardware)
-	- [BIOS settings](#bios-settings)
-	- [Windows 11](#windows-11)
-	- [Omarchy Linux](#omarchy-linux)
+  - [Table of Contents](#table-of-contents)
+  - [Hardware](#hardware)
+  - [BIOS settings](#bios-settings)
+  - [Windows 11](#windows-11)
+  - [Omarchy Linux](#omarchy-linux)
 
 ## Hardware
 
@@ -20,7 +20,7 @@ This is a receipt of workstation for daily use.
 |     **RAM**      | **2 x [Lexar LD4AU032G-B3200GSST](https://americas.lexar.com/product/lexar-ddr4-3200-udimm-desktop-memory/)** 64GB DDR4 3200MHz _(native jedec speed)_                                                                   |
 |     **GPU**      | **[MSI RTX 5070 TI 16GB](https://www.msi.com/Graphics-Card/GeForce-RTX-5070-Ti-16G-INSPIRE-3X-OC-PLUS)** NVIDIA Blackwell _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/GeForce-RTX-5070-Ti-16G-INSPIRE-3X-OC-PLUS.pdf)**)_                                                                          |
 |     **NVMe**     | **[Kingston KC3000](https://www.kingston.com/br/ssd/kc3000-nvme-m2-solid-state-drive?capacity=1024gb)** 1TB PCIe 4.0 x4 _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/KC3000_us.pdf)**)_<br />**[WD Black SN750](https://www.westerndigital.com/pt-br/products/internal-drives/wd-black-sn750-nvme-ssd#WDS250G3X0C)** 1TB PCIe 3.0 x4 _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/data-sheet-wd-black-sn-750-nvme-ssd-heatsink-idk.pdf)**)_                                               |
-|     **Wireless**     | **[Intel AX210](https://www.intel.com.br/content/www/br/pt/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)** Wi-Fi 6E and Bluetooth 5.4 PCI adapter card                                               |
+|     **Wireless**     | **[Intel AX210](https://www.intel.com.br/content/www/br/pt/products/sku/204836/intel-wifi-6e-ax210-gig/specifications.html)** Wi-Fi 6E and Bluetooth 5.4 PCI-e _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/AX210.pdf)**)_                                               |
 |     **RAID 5**      | **2 x** **[Seagate BarraCuda ST2000DM008-2FR102](https://www.seagate.com/br/pt/products/hard-drives/barracuda-hard-drive/)** 2TB HDD 3.5" _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/3-5-barracudaDS1900-11-1806BR-pt_PT.pdf)**)_ <br /> **[Western Digital WD20SPZX](https://www.westerndigital.com/pt-br/products/internal-drives/wd-blue-mobile-sata-hdd?sku=WD20SPZX#WD20SPZX)** 2TB HDD 2.5" _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/product-brief-western-digital-wd-blue-mobile-sata-hdd.pdf)**)_ 
 | **AIO** | **[Arctic Liquid Freezer III Pro 360](https://www.arctic.de/en/Liquid-Freezer-III-Pro-360)** for CPU and VRM _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/Spec_Sheet_Liquid_Freezer_III_Pro_360_EN.pdf)** and **[manual](https://raw.github.com/elieserme/workstation/main/docs/Quick_Manual_Intel_r1b.pdf)**)_ |                                              |
 |  **Fans**  |  **3 x [Artic P12 Pro PST](https://www.arctic.de/en/P12-Pro-PST/ACFAN00306A)** for front intake _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/Spec_Sheet_P12_Pro_PST_EN.pdf)**)_ <br /> **2 x [Fractal Aspect 14 PWM](https://www.fractal-design.com/products/fans/aspect/aspect-14-pwm/)** for top exaust _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/Aspect_Product-Sheet_EN.pdf)**)_ <br />**[Noctua NF-A12x25 PWM](https://www.noctua.at/en/products/nf-a12x25-pwm)** for rear exaust _(download **[datasheet](https://raw.github.com/elieserme/workstation/main/docs/noctua_nf_a12x25_pwm_infosheet_en_web.pdf)** and **[manual](https://raw.github.com/elieserme/workstation/main/docs/noctua_nf_a12x25_pwm_manual_en_web.pdf)**)_                                                                                                 |
